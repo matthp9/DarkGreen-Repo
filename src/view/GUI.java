@@ -6,7 +6,6 @@
 
 package view;
 
-import java.awt.Color;
 import java.awt.Dimension;
 
 import javax.swing.JFrame;
@@ -41,9 +40,9 @@ public class GUI extends JFrame {
 	 * Begins frontend runtime for the GUI.
 	 */
 	public void start() {
-		
 		add(new SetupPanel());
-		
+		MenuBar m = new MenuBar(this);
+		setJMenuBar(m);
 		setLocationRelativeTo(null);
         setVisible(true);
 	}

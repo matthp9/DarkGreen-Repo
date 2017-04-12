@@ -9,7 +9,10 @@ package view;
 import java.awt.Color;
 import java.awt.Dimension;
 
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  * A graphical panel to display to the user when 
@@ -54,5 +57,17 @@ public class SetupPanel extends JPanel {
 		setBackground(BACKGROUND_COLOR);
 		setPreferredSize(DEFAULT_SIZE);
 		
+		//setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+		
+		JTextField name  = new JTextField();
+		JTextField email = new JTextField();
+		JButton submit   = new JButton("Submit");
+		
+		name.setColumns(20);
+		email.setColumns(20);
+
+		add(name);
+		add(email);
+		add(submit);
 	}
 }
