@@ -52,7 +52,7 @@ public class MenuBar extends JMenuBar {
 		JMenuItem about = new JMenuItem("About...");
 		
 		about.addActionListener(new ActionListener() {
-			String names = "Matthew Phillips\nVidal Sisneros\n\n";
+			String names = "Matthew Phillips\nVidal Sisneros\nJasvir Dosanjh\n";
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				JOptionPane.showMessageDialog(myGUI, names, "About", JOptionPane.OK_OPTION, new ImageIcon());
